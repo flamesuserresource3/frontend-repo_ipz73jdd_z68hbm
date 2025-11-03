@@ -13,7 +13,7 @@ export default function Footer() {
           </div>
           <div className="flex sm:justify-end gap-3 flex-wrap">
             <a
-              href="mailto:your.email@example.com"
+              href="mailto:vkukreti16@gmail.com"
               className="inline-flex items-center gap-2 rounded-md border border-white/15 bg-white/5 px-4 py-2 text-slate-100 hover:bg-white/10"
             >
               <Mail size={18} /> Email
@@ -36,7 +36,7 @@ export default function Footer() {
             </a>
           </div>
         </div>
-        <p className="mt-10 text-xs text-slate-400">© {new Date().getFullYear()} Your Name. All rights reserved.</p>
+        <p className="mt-10 text-xs text-slate-400">© {new Date().getFullYear()} Vaibhav Kukreti. All rights reserved.</p>
       </div>
     </footer>
   );

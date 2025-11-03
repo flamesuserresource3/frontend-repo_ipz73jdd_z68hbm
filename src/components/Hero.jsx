@@ -4,10 +4,10 @@ import Spline from '@splinetool/react-spline';
 export default function Hero() {
   return (
     <section id="home" className="relative min-h-screen w-full flex items-center">
-      {/* Spline Background */}
+      {/* Spline Background (Cover) */}
       <div className="absolute inset-0">
         <Spline
-          scene="https://prod.spline.design/qQUip0dJPqrrPryE/scene.splinecode"
+          scene="https://prod.spline.design/ESO6PnMadasO0hU3/scene.splinecode"
           style={{ width: '100%', height: '100%' }}
         />
         {/* Readability overlays that don't block interaction */}
@@ -28,11 +28,12 @@ export default function Hero() {
           <p className="text-sm uppercase tracking-[0.25em] text-slate-300/80">Designer • Builder • Minimalist</p>
           <h1 className="mt-4 text-4xl sm:text-6xl md:text-7xl font-semibold leading-[1.05]">
             <span className="bg-gradient-to-br from-fuchsia-300 via-sky-200 to-violet-300 bg-clip-text text-transparent">
-              Crafting minimal, expressive digital experiences
+              Vaibhav Kukreti
             </span>
           </h1>
-          <p className="mt-6 text-slate-300/90 max-w-xl">
-            I design and develop clean, purposeful interfaces with a touch of motion and an eye for detail.
+          <p className="mt-4 text-slate-300/90 max-w-xl">
+            I craft clean, expressive interfaces with motion and a human touch — blending visual design, interaction,
+            and performance to build thoughtful digital moments.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-3">
             <a
@@ -42,10 +43,10 @@ export default function Hero() {
               View Work
             </a>
             <a
-              href="#contact"
+              href="mailto:vkukreti16@gmail.com"
               className="inline-flex items-center justify-center rounded-md border border-white/15 bg-white/5 px-6 py-2.5 text-white hover:bg-white/10 transition-colors"
             >
-              Get in touch
+              Email Me
             </a>
           </div>
         </motion.div>

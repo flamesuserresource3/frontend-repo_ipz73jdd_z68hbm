@@ -17,6 +17,15 @@ export default function Navbar() {
     { href: '#contact', label: 'Contact' },
   ];
 
+  const handleLink = (e, href) => {
+    e.preventDefault();
+    const el = document.querySelector(href);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+    setOpen(false);
+  };
+
   return (
     <header
       className={`fixed top-0 inset-x-0 z-50 transition-all ${
@@ -27,9 +36,9 @@ export default function Navbar() {
     >
       <nav className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <a href="#home" className="font-semibold tracking-tight">
+          <a href="#home" onClick={(e) => handleLink(e, '#home')} className="font-semibold tracking-tight">
             <span className="bg-gradient-to-r from-fuchsia-400 via-sky-300 to-violet-300 bg-clip-text text-transparent">
-              Minimal/Arte
+              Vaibhav Kukreti
             </span>
           </a>
 
@@ -38,6 +47,7 @@ export default function Navbar() {
               <a
                 key={l.href}
                 href={l.href}
+                onClick={(e) => handleLink(e, l.href)}
                 className="group relative text-sm text-slate-300 hover:text-white transition-colors"
               >
                 {l.label}
@@ -61,7 +71,7 @@ export default function Navbar() {
               <a
                 key={l.href}
                 href={l.href}
-                onClick={() => setOpen(false)}
+                onClick={(e) => handleLink(e, l.href)}
                 className="block px-2 py-2 rounded-md text-slate-200 hover:bg-white/5"
               >
                 {l.label}
